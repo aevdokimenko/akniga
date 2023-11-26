@@ -15,7 +15,7 @@ Akniga.com offers a wide range of audiobooks, predominantly in Russian. This inc
 The script is provided as is. Feel free to modify as it suits your needs.
 
 ## Overview
-The script uses *seleniumwire* version of *webdriver* to iterate through all the urls called by the page. The url of the playlist containing all the fragments is selected, and then sent to the locally installed VLC player. It streams the playlist to a local mp3 file.
+The script uses *seleniumwire* version of *webdriver* to iterate through all the urls called by the user provided audiobook page. The url of the playlist containing all the fragments is selected, and then sent to the locally installed VLC player. The player streams the playlist to a local mp3 file.
 
 ## Requirements
 1. Seleniumwire installed;
