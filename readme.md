@@ -1,16 +1,27 @@
-A script to download audiobooks from akniga.com and store as local mp3s.
+# Akniga Audiobook Downloader
 
-# Disclaimer
+## Table of Contents
+- [Introduction](#introduction)
+- [Disclaimer](#disclaimer)
+- [Overview](#overview)
+- [Requirements](#requirements)
+- [Usage](#usage)
 
-The script provided as is. Feel free to modify as it suits your needs.
+## Introduction
+Akniga.com offers a wide range of audiobooks, predominantly in Russian. This includes both freely downloadable books and fragments of larger works available for purchase. This script is designed to automate the downloading process for the **free audiobooks only**.
 
-# Overview
 
-Akniga.com site provides a variety of audiobooks, mostly in Russian. Some books are available for download for free, some a present only as fragments of the whole works, that you can purchase on the site. The scripts help to automate downloading of __only free audiobooks__.
+## Disclaimer
+The script is provided as is. Feel free to modify as it suits your needs.
 
-The script uses *seleniumwire* version of *webdriver* to iterate through all the urls called by the page. The url of the playlist containing all the fragments is selected, and then sent to the local
+## Overview
+The script uses *seleniumwire* version of *webdriver* to iterate through all the urls called by the page. The url of the playlist containing all the fragments is selected, and then sent to the locally installed VLC player. It streams the playlist to a local mp3 file.
 
-# Requirements
+## Requirements
+1. Seleniumwire installed;
+2. VLC installed locally.
 
-1. Seleniumwire installsed
-2. VLC installed locally
+## Usage
+The script can be used either interactively or with command line parameters.
+
+The url of the audiobook is a required parameter. Optionally a file name can be provided as a second parameter, it it's omitted then the last section of the audiobook url will be used as the name of the audiobook mp3.
